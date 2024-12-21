@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontak - Claire Jaya Service</title>
+    <link rel="stylesheet" href="style.css"> <!-- Menghubungkan ke file CSS -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        nav {
+            background-color: #363838;
+            color: #fff;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo-container {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo-container img {
+            margin-right: 10px;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            gap: 20px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        .header {
+            background: linear-gradient(to right, #004aad, #0070ff);
+            color: #fff;
+            text-align: center;
+            padding: 50px 20px;
+        }
+
+        .header h1 {
+            margin-bottom: 10px;
+        }
+
+        .contact-info, .contact-form, .map {
+            max-width: 800px;
+            margin: 20px auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .contact-info h2, .contact-form h2, .map h2 {
+            border-bottom: 2px solid #004aad;
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+        }
+
+        .contact-details {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .contact-item {
+            flex: 1;
+            min-width: 200px;
+        }
+
+        .contact-item h3 {
+            color: #004aad;
+        }
+
+        form label {
+            display: block;
+            margin-top: 10px;
+        }
+
+        form input, form textarea, form button {
+            width: 100%;
+            margin-top: 5px;
+        }
+
+        form input, form textarea {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        form button {
+            background-color: #004aad;
+            color: #fff;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 20px;
+        }
+
+        form button:hover {
+            background-color: #00327d;
+        }
+
+        iframe {
+            border: 0;
+            border-radius: 10px;
+            width: 100%;
+            height: 300px;
+        }
+
+        footer {
+            text-align: center;
+            background-color: #004aad;
+            color: #fff;
+            padding: 10px 20px;
+            margin-top: 20px;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        @media (max-width: 600px) {
+            .contact-details {
+                flex-direction: column;
+            }
+
+            nav ul {
+                flex-direction: column;
+                gap: 10px;
+                align-items: flex-start;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigasi -->
+    <nav>
+        <div class="logo-container">
+            <img src="download.png" alt="Logo" width="50"> <!-- Logo gambar -->
+            <span>Claire Jaya Service</span> <!-- Nama layanan -->
+        </div>
+        <ul>
+            <li><a href="index.html">Beranda</a></li>
+            <li><a href="layanan.html">Layanan</a></li>
+            <li><a href="kontak.html">Kontak</a></li>
+            <li><a href="tentang.html">Tentang</a></li>
+        </ul>
+    </nav>
+
+    <!-- Header Kontak -->
+    <header class="header">
+        <h1>Kontak Kami</h1>
+        <p>Jika Anda membutuhkan layanan atau memiliki pertanyaan, jangan ragu untuk menghubungi kami melalui informasi di bawah ini.</p>
+    </header>
+
+    <!-- Informasi Kontak -->
+    <section class="contact-info">
+        <h2>Informasi Kontak</h2>
+        <div class="contact-details">
+            <div class="contact-item">
+                <h3>Alamat</h3>
+                <p>Jl. Kubu Mangong Ungasan, Kec. Kuta Selatan, Kabupaten Badung, Bali.</p>
+            </div>
+            <div class="contact-item">
+                <h3>Nomor Telepon</h3>
+                <p>082-341-667-848</p>
+            </div>
+            <div class="contact-item">
+                <h3>Email</h3>
+                <p>clairejayaservice@gmail.com</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Formulir Kontak -->
+    <section class="contact-form">
+        <h2>Kirim Pesan</h2>
+        <form action="#" method="POST">
+            <label for="name">Nama Lengkap</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Pesan</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button type="submit" class="cta-button">Kirim Pesan</button>
+        </form>
+    </section>
+
+    <!-- Peta Lokasi -->
+    <section class="map">
+        <h2>Lokasi Kami</h2>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.013366417459!2d144.9631612!3d-37.8124822!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad65d5b34a0b95d%3A0x50562c88adf6f30f!2sFederation%20Square!5e0!3m2!1sen!2sau!4v1579150239706!5m2!1sen!2sau" loading="lazy"></iframe>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2020 Claire Jaya Service - Semua Hak Dilindungi</p>
+    </footer>
+</body>
+</html>

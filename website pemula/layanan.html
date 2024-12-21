@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layanan - Claire Jaya Service</title>
+    <link rel="stylesheet" href="style.css"> <!-- Menghubungkan ke file CSS -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #494b4d;
+            color: white;
+            padding: 10px 20px;
+        }
+
+        .logo-container {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo-container img {
+            margin-right: 10px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            margin: 0 10px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .hero {
+            background: #0070ff;
+            color: white;
+            text-align: center;
+            padding: 50px 20px;
+        }
+
+        .main-content {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .services {
+            padding: 20px;
+        }
+
+        .services h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+        }
+
+        .service-item {
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            text-align: center;
+            padding: 15px;
+            transition: transform 0.3s ease;
+        }
+
+        .service-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .service-item img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        footer {
+            background-color: #3b3c3d;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigasi -->
+    <nav>
+        <div class="logo-container">
+            <img src="download.png" alt="Logo" width="50">
+            <span>Claire Jaya Service</span>
+        </div>
+        <ul>
+            <li><a href="index.html">Beranda</a></li>
+            <li><a href="layanan.html">Layanan</a></li>
+            <li><a href="kontak.html">Kontak</a></li>
+            <li><a href="tentang.html">Tentang</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <h1>Layanan Kami</h1>
+        <p>Temukan layanan terbaik untuk menjaga kebersihan kolam renang Anda.</p>
+    </header>
+
+    <!-- Konten Layanan -->
+    <section class="main-content">
+        <h2>Pembersihan Kolam Renang</h2>
+        <p>Kami menawarkan pembersihan kolam secara berkala dengan peralatan modern untuk menjaga kebersihan dan kesehatan kolam renang Anda.</p>
+    </section>
+
+    <!-- Daftar Layanan -->
+    <section class="services">
+        <h2>Layanan Lainnya</h2>
+        <div class="services-grid">
+            <div class="service-item">
+                <img src="chlorin.jpg" alt="Chlorin">
+                <h3>Chlorin</h3>
+                <p>Menjaga air kolam tetap bersih dan bebas bakteri.</p>
+            </div>
+            <div class="service-item">
+                <img src="sodium.jpg" alt="Sodium">
+                <h3>Sodium</h3>
+                <p>Meningkatkan efisiensi sistem filtrasi air kolam renang Anda.</p>
+            </div>
+            <div class="service-item">
+                <img src="hcl1.jpg" alt="HCL">
+                <h3>HCL</h3>
+                <p>Membantu menjaga keseimbangan pH air kolam.</p>
+            </div>
+            <div class="service-item">
+                <img src="pac.jpg" alt="PAC">
+                <h3>PAC</h3>
+                <p>Efektif untuk menghilangkan kotoran dari air kolam renang.</p>
+            </div>
+            <div class="service-item">
+                <img src="soda-as.jpg" alt="Soda Ash">
+                <h3>Soda Ash</h3>
+                <p>Meningkatkan kadar alkalinitas air kolam untuk mencegah korosi.</p>
+            </div>
+            <div class="service-item">
+                <img src="trusi.jpg" alt="Trusi">
+                <h3>Trusi</h3>
+                <p>Bahan tambahan untuk membantu menjaga kualitas air kolam renang.</p>
+            </div>
+            <div class="service-item">
+                <img src="peralatan.jpg" alt="Peralatan Kolam Renang">
+                <h3>Peralatan Kolam Renang</h3>
+                <p>Beragam peralatan untuk kebutuhan pemeliharaan kolam renang Anda.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2020 Claire Jaya Service - Semua Hak Dilindungi</p>
+    </footer>
+</body>
+</html>
